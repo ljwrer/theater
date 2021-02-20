@@ -1,12 +1,14 @@
 import * as path from 'path';
 
 import globby from 'globby';
+import normalize from 'normalize-path';
 
 import { torrentClient } from '../lib/torrent/TorrentClient';
 import { TorrentParser } from '../lib/torrent/TorrentParser';
 import { tracker } from '../lib/tracker/Tracker';
 
-const resolveCwd = (dir) => path.resolve(process.cwd(), dir);
+
+const resolveCwd = (dir) => normalize(path.resolve(process.cwd(), dir));
 
 class Cat {
   async downloadByFilePath(dir: string) {

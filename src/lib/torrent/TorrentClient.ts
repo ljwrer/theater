@@ -10,7 +10,7 @@ class TorrentClient {
     return new Promise((resolve, reject) => {
       this.utorrent.call(
         'add-file',
-        { torrent_file: buffer },
+        { torrent_file: buffer, download_dir: 1 },
         function (err, data) {
           if (err) {
             console.log('error : ');
