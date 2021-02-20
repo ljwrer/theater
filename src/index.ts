@@ -3,8 +3,8 @@ import { program } from 'commander';
 
 import { cat } from './cat/Cat';
 program
-  .option('-t, --torrent', 'torrent path')
-  .option('-d, --dir', 'torrent dir path');
+  .option('-t, --torrent <t>', 'torrent path')
+  .option('-d, --dir <d>', 'torrent dir path');
 program.parse(process.argv);
 const options = program.opts();
 if (options.torrent) {

@@ -1,3 +1,13 @@
 # theater
+## install
+```bash
+$ git clone
+$ yarn
+$ yarn link
+```
 
-home theater
+## usage
+```bash
+$ mira -t a.torrent
+$ mira -d ./
+```
