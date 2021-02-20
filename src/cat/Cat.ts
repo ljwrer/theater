@@ -40,4 +40,4 @@ class Cat {
   }
 }
 
-export const cat = new Cat()
+export const cat = new Cat();

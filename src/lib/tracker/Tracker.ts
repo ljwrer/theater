@@ -34,12 +34,16 @@ class Tracker {
   }
   private writeStore() {
     const now = dayjs().format('YYYY/MM/DD');
-    fs.writeJsonSync(Tracker.dir, {
-      list: this.list,
-      updatedAt: now,
-    }, {
-      spaces: 4
-    });
+    fs.writeJsonSync(
+      Tracker.dir,
+      {
+        list: this.list,
+        updatedAt: now,
+      },
+      {
+        spaces: 4,
+      }
+    );
   }
 }
 export const tracker = new Tracker();
