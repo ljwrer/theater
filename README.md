@@ -1,4 +1,5 @@
 # theater
+a tracker helper for utorrent,rely on utorrent web service
 ## install
 ```bash
 $ git clone
